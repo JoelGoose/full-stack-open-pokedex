@@ -22,3 +22,7 @@ jobs:
         env:
           COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
         run: echo "$COMMIT_MESSAGES"
+      - name: commit message contains 'testing'
+        env:
+          COMMIT_CONTAINS: ${{ contains(toJson(github.event.commits.*.message), 'testing') }}
+        run: echo "$COMMIT_CONTAINS"
