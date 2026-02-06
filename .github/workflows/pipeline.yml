@@ -37,6 +37,7 @@ jobs:
           severity: info
           color: '#00BF00'
           title: Well done in not screwing it up
+          description: "Repository: ${{ github.repository }}, Actor: ${{ github.actor }}"
 
 
   tag_release:
