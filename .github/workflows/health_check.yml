@@ -2,8 +2,7 @@ name: Health Check
 
 on:
   schedule:
-    # At 12:00 on day-of-month 1 in every month from January through December.
-    - cron: "0 12 1 1-12 *"
+    - cron: "* * * * *"
 
 jobs: 
   health_check_on_deployed_website:
