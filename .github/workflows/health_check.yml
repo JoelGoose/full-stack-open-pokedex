@@ -13,7 +13,7 @@ jobs:
       uses: jtalk/url-health-check-action@v4
       with:
         # Check the following URLs one by one sequentially
-        url: https://full-stack-open-pokedex-jpf2.onrender.com/
+        url: https://full-stack-open-pokedex-jpf2.onrender.com/5
         # Fail this action after this many failed attempts
         max-attempts: 3 # Optional, defaults to 1
         # Delay between retries
