@@ -1,8 +1,9 @@
 name: Hello World!
 
 on:
-  schedule:
-    - cron: "* * * * *"
+  push:
+    branches:
+      - main
 
 jobs:
   hello_world_job:
